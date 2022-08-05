@@ -18,7 +18,7 @@ exports.registerUser = catchAsyncErrors(async (req, res, next) => {
     password,
     avatar: {
       public_id: "aman",
-      url: "nisha",
+      ,
     },
   });
 
