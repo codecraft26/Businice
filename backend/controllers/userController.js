@@ -10,7 +10,7 @@ const cloudinary = require("cloudinary");
 exports.registerUser = catchAsyncErrors(async (req, res, next) => {
 
 
-  const { name, email, password } = req.body;
+  const { name, email, password} = req.body;
 
   const user = await User.create({
     name,
@@ -18,8 +18,10 @@ exports.registerUser = catchAsyncErrors(async (req, res, next) => {
     password,
     avatar: {
       public_id: "aman",
-      ,
+      url:"niuorfb"
+
     },
+   
   });
 
   sendToken(user, 201, res);
